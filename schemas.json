@@ -2,6 +2,7 @@
   {
     "name": "MP7655_AddFuelIssue_001",
     "simple": "Add Fuel",
+    "group": "Fuel Management",
     "body": {
       "MP7655_AddFuelIssue_001": {
         "verb": "Add",
