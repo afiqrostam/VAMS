@@ -330,6 +330,15 @@
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
       },
       {
+        "name": "CREATEDDATE",
+        "field": "created_date",
+        "column": "Created\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
+        "required": true,
+        "order": 11,
+        "type": "datetime",
+        "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
+      },
+      {
         "name": "STORECODE",
         "field": "store_code",
         "column": "Store\nCode",
@@ -343,7 +352,7 @@
         "field": "employee_code",
         "column": "Employee\nCode\n(Person Responsible)",
         "required": true,
-        "order": 11,
+        "order": 12,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract/EMPLOYEEID"
       },
@@ -352,7 +361,7 @@
         "field": "contract_contact",
         "column": "Contract\nContact\n(Reference)",
         "required": false,
-        "order": 12,
+        "order": 13,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
       },
@@ -361,7 +370,7 @@
         "field": "language_code",
         "column": "Language\nCode\n(default EN)",
         "required": true,
-        "order": 13,
+        "order": 14,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract/LANGUAGEID"
       },
@@ -370,7 +379,7 @@
         "field": "currency_code",
         "column": "Currency\nCode\n(default AUD)",
         "required": true,
-        "order": 14,
+        "order": 15,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract/CURRENCYID"
       }
@@ -425,7 +434,7 @@
           },
           "OWNCONTRACT": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
-            "Text": "FALSE"
+            "Text": "false"
           },
           "PRINTED": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -526,6 +535,15 @@
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
       },
       {
+        "name": "CREATEDDATE",
+        "field": "created_date",
+        "column": "Created\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
+        "required": true,
+        "order": 11,
+        "type": "datetime",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
         "name": "STORECODE",
         "field": "store_code",
         "column": "Store\nCode",
@@ -539,7 +557,7 @@
         "field": "employee_code",
         "column": "Employee\nCode\n(Person Responsible)",
         "required": true,
-        "order": 11,
+        "order": 12,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/EMPLOYEEID"
       },
@@ -548,7 +566,7 @@
         "field": "contract_contact",
         "column": "Contract\nContact\n(Reference)",
         "required": false,
-        "order": 12,
+        "order": 13,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
       },
@@ -557,7 +575,7 @@
         "field": "language_code",
         "column": "Language\nCode\n(default EN)",
         "required": true,
-        "order": 13,
+        "order": 14,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/LANGUAGEID"
       },
@@ -566,7 +584,7 @@
         "field": "currency_code",
         "column": "Currency\nCode\n(default AUD)",
         "required": true,
-        "order": 14,
+        "order": 15,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/CURRENCYID"
       }
