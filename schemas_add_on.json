@@ -232,7 +232,8 @@
             "Namespace": "http://schemas.datastream.net/MP_fields"
           },
           "OWNCONTRACT": {
-            "Namespace": "http://schemas.datastream.net/MP_fields"
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "Text": "FALSE"
           }
         }
       }
@@ -372,15 +373,6 @@
         "order": 14,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract/CURRENCYID"
-      },
-      {
-        "name": "OWNCONTRACT",
-        "field": "own_contract",
-        "column": "Own\nContract\n(default FALSE)",
-        "required": false,
-        "order": 15,
-        "type": "Text",
-        "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
       }
     ]
   },
@@ -437,7 +429,7 @@
           },
           "PRINTED": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
-            "Text": "FALSE"
+            "Text": "false"
           }
         }
       }
