@@ -332,7 +332,7 @@
       {
         "name": "CREATEDDATE",
         "field": "created_date",
-        "column": "Created\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
+        "column": "Created\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 11,
         "type": "datetime",
@@ -537,7 +537,7 @@
       {
         "name": "CREATEDDATE",
         "field": "created_date",
-        "column": "Created\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
+        "column": "Created\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 11,
         "type": "datetime",
