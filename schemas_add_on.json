@@ -437,8 +437,7 @@
             "Text": "false"
           },
           "PRINTED": {
-            "Namespace": "http://schemas.datastream.net/MP_fields",
-            "Text": "false"
+            "Namespace": "http://schemas.datastream.net/MP_fields"
           }
         }
       }
@@ -531,15 +530,6 @@
         "column": "Renewal\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
         "required": true,
         "order": 10,
-        "type": "datetime",
-        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
-      },
-      {
-        "name": "CREATEDDATE",
-        "field": "created_date",
-        "column": "Created\nDate\n(yyyy-mm-dd)",
-        "required": true,
-        "order": 11,
         "type": "datetime",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
       },
