@@ -6,6 +6,7 @@
     "role": "Fuel Transaction",
     "body": {
       "MP7655_AddFuelIssue_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "FuelIssue",
         "version": "001",
@@ -117,6 +118,7 @@
     "role": "Meter Reading",
     "body": {
       "MP0044_AddMeterReading_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "MeterReading",
         "version": "001",
@@ -191,6 +193,7 @@
     "role": "Purchasing Contract",
     "body": {
       "MP4029_AddPurchasingContract_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "PurchasingContract",
         "version": "001",
