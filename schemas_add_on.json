@@ -340,7 +340,7 @@
       {
         "name": "EMPLOYEECODE",
         "field": "employee_code",
-        "column": "Employee Code (Person Responsible)",
+        "column": "Employee Code\n(Person Responsible)",
         "required": true,
         "order": 11,
         "type": "Text",
@@ -349,7 +349,7 @@
       {
         "name": "CONTRACTCONTACT",
         "field": "contract_contact",
-        "column": "Contract Contact (Reference)",
+        "column": "Contract Contact\n(Reference)",
         "required": false,
         "order": 12,
         "type": "Text",
@@ -358,7 +358,7 @@
       {
         "name": "LANGUAGECODE",
         "field": "language_code",
-        "column": "Language Code (default EN)",
+        "column": "Language Code\n(default EN)",
         "required": true,
         "order": 13,
         "type": "Text",
@@ -367,7 +367,7 @@
       {
         "name": "CURRENCYCODE",
         "field": "currency_code",
-        "column": "Currency Code (default AUD)",
+        "column": "Currency Code\n(default AUD)",
         "required": true,
         "order": 14,
         "type": "Text",
@@ -376,7 +376,7 @@
       {
         "name": "OWNCONTRACT",
         "field": "own_contract",
-        "column": "Own Contract (default FALSE)",
+        "column": "Own Contract\n(default FALSE)",
         "required": false,
         "order": 15,
         "type": "Text",
