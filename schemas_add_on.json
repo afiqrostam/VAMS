@@ -547,7 +547,7 @@
         "field": "employee_code",
         "column": "Employee\nCode\n(Person Responsible)",
         "required": true,
-        "order": 12,
+        "order": 11,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/EMPLOYEEID"
       },
@@ -556,7 +556,7 @@
         "field": "contract_contact",
         "column": "Contract\nContact\n(Reference)",
         "required": false,
-        "order": 13,
+        "order": 12,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
       },
@@ -565,7 +565,7 @@
         "field": "language_code",
         "column": "Language\nCode\n(default EN)",
         "required": true,
-        "order": 14,
+        "order": 13,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/LANGUAGEID"
       },
@@ -574,7 +574,7 @@
         "field": "currency_code",
         "column": "Currency\nCode\n(default AUD)",
         "required": true,
-        "order": 15,
+        "order": 14,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/CURRENCYID"
       }
