@@ -48,7 +48,7 @@
       {
         "name": "ORGANIZATIONCODE",
         "field": "depot_org",
-        "column": "Depot Organization",
+        "column": "Depot\nOrganization",
         "required": true,
         "order": 0,
         "type": "Text",
@@ -84,7 +84,7 @@
       {
         "name": "ORGANIZATIONCODE",
         "field": "vehicle_org",
-        "column": "Vehicle Organization",
+        "column": "Vehicle\nOrganization",
         "required": false,
         "order": 4,
         "type": "Text",
@@ -93,7 +93,7 @@
       {
         "name": "TRANSACTIONDATE",
         "field": "date",
-        "column": "Date (yyyy-mm-dd)",
+        "column": "Transaction\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 6,
         "type": "datetime",
@@ -149,7 +149,7 @@
       {
         "name": "ORGANIZATIONCODE",
         "field": "element_org",
-        "column": "Element Organization",
+        "column": "Element\nOrganization",
         "required": true,
         "order": 0,
         "type": "Text",
@@ -167,7 +167,7 @@
       {
         "name": "READINGDATE",
         "field": "date",
-        "column": "Date (yyyy-mm-dd)",
+        "column": "Reading\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 2,
         "type": "datetime",
@@ -176,7 +176,7 @@
       {
         "name": "ACTUALREADING",
         "field": "meter_reading",
-        "column": "Meter Reading",
+        "column": "Meter\nReading",
         "required": true,
         "order": 3,
         "type": "reading",
@@ -241,7 +241,7 @@
       {
         "name": "CONTRACTCODE",
         "field": "contract_code",
-        "column": "Contract Code",
+        "column": "Contract\nCode\n(leave blank)",
         "required": false,
         "order": 1,
         "type": "Text",
@@ -250,7 +250,7 @@
       {
         "name": "ORGANIZATIONCODE",
         "field": "contract_org",
-        "column": "Contract Org",
+        "column": "Contract\nOrganization",
         "required": true,
         "order": 0,
         "type": "Text",
@@ -259,7 +259,7 @@
       {
         "name": "DESCRIPTION",
         "field": "contract_desc",
-        "column": "Contract",
+        "column": "Contract\nDescription",
         "required": true,
         "order": 2,
         "type": "Text",
@@ -268,7 +268,7 @@
       {
         "name": "STATUSCODE",
         "field": "status_code",
-        "column": "Status Code",
+        "column": "Status\nCode\n(default U)",
         "required": true,
         "order": 3,
         "type": "Text",
@@ -277,7 +277,7 @@
       {
         "name": "SUPPLIERCODE",
         "field": "supplier_code",
-        "column": "Supplier Code",
+        "column": "Supplier\nCode",
         "required": true,
         "order": 4,
         "type": "Text",
@@ -286,7 +286,7 @@
       {
         "name": "ORGANIZATIONCODE",
         "field": "supplier_org",
-        "column": "Supplier Org",
+        "column": "Supplier\nOrganization",
         "required": true,
         "order": 5,
         "type": "Text",
@@ -295,7 +295,7 @@
       {
         "name": "SUPPLIERREFERENCE",
         "field": "supplier_ref",
-        "column": "Supplier Ref",
+        "column": "Supplier\nReference",
         "required": false,
         "order": 6,
         "type": "Text",
@@ -304,7 +304,7 @@
       {
         "name": "STARTDATE",
         "field": "start_date",
-        "column": "Start Date (yyyy-mm-dd)",
+        "column": "Start\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 8,
         "type": "datetime",
@@ -313,7 +313,7 @@
       {
         "name": "ENDDATE",
         "field": "end_date",
-        "column": "End Date (yyyy-mm-dd)",
+        "column": "End\nDate\n(yyyy-mm-dd)",
         "required": true,
         "order": 9,
         "type": "datetime",
@@ -322,7 +322,7 @@
       {
         "name": "RENEWALDATE",
         "field": "renewal_date",
-        "column": "Renewal Date (yyyy-mm-dd)",
+        "column": "Renewal\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
         "required": true,
         "order": 10,
         "type": "datetime",
@@ -331,7 +331,7 @@
       {
         "name": "STORECODE",
         "field": "store_code",
-        "column": "Store Code",
+        "column": "Store\nCode",
         "required": true,
         "order": 7,
         "type": "Text",
@@ -340,7 +340,7 @@
       {
         "name": "EMPLOYEECODE",
         "field": "employee_code",
-        "column": "Employee Code\n(Person Responsible)",
+        "column": "Employee\nCode\n(Person Responsible)",
         "required": true,
         "order": 11,
         "type": "Text",
@@ -349,7 +349,7 @@
       {
         "name": "CONTRACTCONTACT",
         "field": "contract_contact",
-        "column": "Contract Contact\n(Reference)",
+        "column": "Contract\nContact\n(Reference)",
         "required": false,
         "order": 12,
         "type": "Text",
@@ -358,7 +358,7 @@
       {
         "name": "LANGUAGECODE",
         "field": "language_code",
-        "column": "Language Code\n(default EN)",
+        "column": "Language\nCode\n(default EN)",
         "required": true,
         "order": 13,
         "type": "Text",
@@ -367,7 +367,7 @@
       {
         "name": "CURRENCYCODE",
         "field": "currency_code",
-        "column": "Currency Code\n(default AUD)",
+        "column": "Currency\nCode\n(default AUD)",
         "required": true,
         "order": 14,
         "type": "Text",
@@ -376,7 +376,7 @@
       {
         "name": "OWNCONTRACT",
         "field": "own_contract",
-        "column": "Own Contract\n(default FALSE)",
+        "column": "Own\nContract\n(default FALSE)",
         "required": false,
         "order": 15,
         "type": "Text",
