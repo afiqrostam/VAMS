@@ -423,7 +423,7 @@
       {
         "name": "CONTRACTCODE",
         "field": "contract_code",
-        "column": "Contract\nCode\n",
+        "column": "Contract\nCode",
         "required": true,
         "order": 1,
         "type": "Text",
