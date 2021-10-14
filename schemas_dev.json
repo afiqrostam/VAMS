@@ -327,7 +327,7 @@
         "name": "RENEWALDATE",
         "field": "renewal_date",
         "column": "Renewal\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
-        "required": true,
+        "required": false,
         "order": 10,
         "type": "datetime",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
