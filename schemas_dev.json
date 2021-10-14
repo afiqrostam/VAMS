@@ -6,12 +6,12 @@
     "role": "Fuel Transaction",
     "body": {
       "MP7655_AddFuelIssue_001": {
-        "recordid":"0",
         "verb": "Add",
         "noun": "FuelIssue",
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP7655_001",
         "FuelIssue": {
+          "recordid":"0",
           "Namespace": "http://schemas.datastream.net/MP_entities/FuelIssue_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "FuelOneIssue": {
@@ -118,12 +118,12 @@
     "role": "Meter Reading",
     "body": {
       "MP0044_AddMeterReading_001": {
-        "recordid":"0",
         "verb": "Add",
         "noun": "MeterReading",
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP0044_001",
         "MeterReading": {
+          "recordid":"0",
           "Namespace": "http://schemas.datastream.net/MP_entities/MeterReading_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "TARGETEQUIPMENTID": {
@@ -193,12 +193,12 @@
     "role": "Purchasing Contract",
     "body": {
       "MP4029_AddPurchasingContract_001": {
-        "recordid":"0",
         "verb": "Add",
         "noun": "PurchasingContract",
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4029_001",
         "PurchasingContract": {
+          "recordid":"0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -386,7 +386,6 @@
     "role": "Purchasing Contract",
     "body": {
       "MP4033_AddPurchasingContractPart_001": {
-        "recordid":"0",
         "verb": "Add",
         "noun": "PurchasingContractPart",
         "version": "001",
@@ -510,12 +509,12 @@
     "role": "Purchasing Contract",
     "body": {
       "MP4030_SyncPurchasingContract_001": {
-        "recordid":"1",
         "verb": "Sync",
         "noun": "PurchasingContract",
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4030_001",
         "PurchasingContract": {
+          "recordid":"1",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
