@@ -441,7 +441,7 @@
       {
         "name": "PARTCODE",
         "field": "part_code",
-        "column": "Part\nCode\n",
+        "column": "Part\nCode",
         "required": true,
         "order": 3,
         "type": "Text",
