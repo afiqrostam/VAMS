@@ -501,5 +501,202 @@
         "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
       }
     ]
+  },
+  {
+    "name": "MP4030_SyncPurchasingContract_001",
+    "simple": "Sync Purchasing Contract",
+    "group": "Purchasing Contract Management",
+    "role": "Purchasing Contract",
+    "body": {
+      "MP4030_SyncPurchasingContract_001": {
+        "verb": "Sync",
+        "noun": "PurchasingContract",
+        "version": "001",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP4030_001",
+        "PurchasingContract": {
+          "recordid":"0",
+          "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
+          "PURCHASINGCONTRACTID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "ORGANIZATIONID": {
+              "entity": "CONT"
+            }
+          },
+          "STATUS": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "entity": "CONT"
+          },
+          "SUPPLIERID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "ORGANIZATIONID": {
+              "entity": "CONT"
+            }
+          },
+          "SUPPLIERREFERENCE": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "LANGUAGEID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "EMPLOYEEID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "CURRENCYID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "STOREID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "CONTRACTCONTACT": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "PRINTED": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "Text": "false"
+          },
+          "OWNCONTRACT": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "Text": "FALSE"
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "CONTRACTCODE",
+        "field": "contract_code",
+        "column": "Contract\nCode",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/PURCHASINGCONTRACTID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "contract_org",
+        "column": "Contract\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/PURCHASINGCONTRACTID/ORGANIZATIONID"
+      },
+      {
+        "name": "DESCRIPTION",
+        "field": "contract_desc",
+        "column": "Contract\nDescription",
+        "required": true,
+        "order": 2,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/PURCHASINGCONTRACTID"
+      },
+      {
+        "name": "STATUSCODE",
+        "field": "status_code",
+        "column": "Status\nCode\n(default U, Approved A)",
+        "required": true,
+        "order": 3,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/STATUS"
+      },
+      {
+        "name": "SUPPLIERCODE",
+        "field": "supplier_code",
+        "column": "Supplier\nCode",
+        "required": true,
+        "order": 4,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/SUPPLIERID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "supplier_org",
+        "column": "Supplier\nOrganization",
+        "required": true,
+        "order": 5,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/SUPPLIERID/ORGANIZATIONID"
+      },
+      {
+        "name": "SUPPLIERREFERENCE",
+        "field": "supplier_ref",
+        "column": "Supplier\nReference",
+        "required": false,
+        "order": 6,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
+        "name": "STARTDATE",
+        "field": "start_date",
+        "column": "Start\nDate\n(yyyy-mm-dd)",
+        "required": true,
+        "order": 8,
+        "type": "datetime",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
+        "name": "ENDDATE",
+        "field": "end_date",
+        "column": "End\nDate\n(yyyy-mm-dd)",
+        "required": true,
+        "order": 9,
+        "type": "datetime",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
+        "name": "RENEWALDATE",
+        "field": "renewal_date",
+        "column": "Renewal\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
+        "required": true,
+        "order": 10,
+        "type": "datetime",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
+        "name": "STORECODE",
+        "field": "store_code",
+        "column": "Store\nCode",
+        "required": true,
+        "order": 7,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/STOREID"
+      },
+      {
+        "name": "EMPLOYEECODE",
+        "field": "employee_code",
+        "column": "Employee\nCode\n(Person Responsible)",
+        "required": true,
+        "order": 11,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/EMPLOYEEID"
+      },
+      {
+        "name": "CONTRACTCONTACT",
+        "field": "contract_contact",
+        "column": "Contract\nContact\n(Reference)",
+        "required": false,
+        "order": 12,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract"
+      },
+      {
+        "name": "LANGUAGECODE",
+        "field": "language_code",
+        "column": "Language\nCode\n(default EN)",
+        "required": true,
+        "order": 13,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/LANGUAGEID"
+      },
+      {
+        "name": "CURRENCYCODE",
+        "field": "currency_code",
+        "column": "Currency\nCode\n(default AUD)",
+        "required": true,
+        "order": 14,
+        "type": "Text",
+        "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/CURRENCYID"
+      }
+    ]
   }
 ]
