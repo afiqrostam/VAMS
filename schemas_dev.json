@@ -514,7 +514,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4030_001",
         "PurchasingContract": {
-          "recordid":"0",
+          "recordid":"1",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
