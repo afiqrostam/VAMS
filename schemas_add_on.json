@@ -6,6 +6,7 @@
     "role": "Fuel Transaction",
     "body": {
       "MP7655_AddFuelIssue_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "FuelIssue",
         "version": "001",
@@ -117,6 +118,7 @@
     "role": "Meter Reading",
     "body": {
       "MP0044_AddMeterReading_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "MeterReading",
         "version": "001",
@@ -191,6 +193,7 @@
     "role": "Purchasing Contract",
     "body": {
       "MP4029_AddPurchasingContract_001": {
+        "recordid":"0",
         "verb": "Add",
         "noun": "PurchasingContract",
         "version": "001",
@@ -324,7 +327,7 @@
         "name": "RENEWALDATE",
         "field": "renewal_date",
         "column": "Renewal\nDate\n(yyyy-mm-dd)\n(End Date + 1)",
-        "required": true,
+        "required": false,
         "order": 10,
         "type": "datetime",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract"
@@ -373,6 +376,130 @@
         "order": 14,
         "type": "Text",
         "parent": "MP4029_AddPurchasingContract_001/PurchasingContract/CURRENCYID"
+      }
+    ]
+  },
+  {
+    "name": "MP4033_AddPurchasingContractPart_001",
+    "simple": "Add Purchasing Contract Parts",
+    "group": "Purchasing Contract Management",
+    "role": "Purchasing Contract",
+    "body": {
+      "MP4033_AddPurchasingContractPart_001": {
+        "recordid":"0",
+        "verb": "Add",
+        "noun": "PurchasingContractPart",
+        "version": "001",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP4033_001",
+        "PurchasingContractPart": {
+          "recordid":"0",
+          "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContractPart_001",
+          "PURCHASINGCONTRACTPARTID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "PURCHASINGCONTRACTID": {
+              "ORGANIZATIONID": {
+                "entity": "User"
+              }
+            },
+            "PARTID": {
+              "ORGANIZATIONID": {
+                "entity": "Organization"
+              }
+            }
+          },
+          "PURCHASEUOM": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "SUPPLIERREFERENCE": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          },
+          "CURRENCYCODE": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "CONTRACTCODE",
+        "field": "contract_code",
+        "column": "Contract\nCode",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart/PURCHASINGCONTRACTPARTID/PURCHASINGCONTRACTID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "contract_org",
+        "column": "Contract\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart/PURCHASINGCONTRACTPARTID/PURCHASINGCONTRACTID/ORGANIZATIONID"
+      },
+      {
+        "name": "PARTCODE",
+        "field": "part_code",
+        "column": "Part\nCode",
+        "required": true,
+        "order": 3,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart/PURCHASINGCONTRACTPARTID/PARTID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "part_org",
+        "column": "Part\nOrganization",
+        "required": true,
+        "order": 2,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart/PURCHASINGCONTRACTPARTID/PARTID/ORGANIZATIONID"
+      },
+      {
+        "name": "UOMCODE",
+        "field": "uop_code",
+        "column": "UOP Code\n(Unit of Purchase)",
+        "required": true,
+        "order": 4,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart/PURCHASEUOM"
+      },
+      {
+        "name": "CONVERSIONFACTOR",
+        "field": "qty_uop",
+        "column": "Quantity/UOP\n(1 UOP = ?UOM)",
+        "required": true,
+        "order": 5,
+        "type": "Amount",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
+      },
+      {
+        "name": "NETPRICE",
+        "field": "net_price",
+        "column": "Net Price\n(UOP Price)",
+        "required": true,
+        "order": 6,
+        "type": "Amount",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
+      },
+      {
+        "name": "SUPPLIERREFERENCE",
+        "field": "supplier_ref",
+        "column": "Supplier\nReference",
+        "required": true,
+        "order": 7,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
+      },
+      {
+        "name": "CURRENCYCODE",
+        "field": "currency_code",
+        "column": "Currency\nCode\n(default AUD)",
+        "required": true,
+        "order": 8,
+        "type": "Text",
+        "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
       }
     ]
   }
