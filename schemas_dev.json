@@ -11,7 +11,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP7655_001",
         "FuelIssue": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/FuelIssue_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "FuelOneIssue": {
@@ -123,7 +123,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP0044_001",
         "MeterReading": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/MeterReading_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "TARGETEQUIPMENTID": {
@@ -198,7 +198,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4029_001",
         "PurchasingContract": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -391,7 +391,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4033_001",
         "PurchasingContractPart": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContractPart_001",
           "PURCHASINGCONTRACTPARTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -514,7 +514,6 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4030_001",
         "PurchasingContract": {
-          "recordid":"0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -696,6 +695,46 @@
         "order": 14,
         "type": "Text",
         "parent": "MP4030_SyncPurchasingContract_001/PurchasingContract/CURRENCYID"
+      }
+    ]
+  },
+  {
+    "name": "MP4028_GetPurchasingContract_001",
+    "simple": "Get Purchasing Contract",
+    "group": "Purchasing Contract Management",
+    "role": "Purchasing Contract",
+    "body": {
+      "MP4028_GetPurchasingContract_001": {
+        "verb": "Get",
+        "noun": "PurchasingContract",
+        "version": "001",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP4028_001",
+        "PURCHASINGCONTRACTID": {
+          "Namespace": "http://schemas.datastream.net/MP_fields",
+          "ORGANIZATIONID": {
+            "entity": "CONT"
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "CONTRACTCODE",
+        "field": "contract_code",
+        "column": "Contract\nCode",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP4028_GetPurchasingContract_001/PURCHASINGCONTRACTID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "contract_org",
+        "column": "Contract\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP4028_GetPurchasingContract_001/PURCHASINGCONTRACTID/ORGANIZATIONID"
       }
     ]
   }
