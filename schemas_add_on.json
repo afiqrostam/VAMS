@@ -118,7 +118,7 @@
         "column": "Fuel Unit Price*\n(mandatory for card)",
         "required": false,
         "order": 8,
-        "type": "Amount",
+        "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/StandardUserDefinedFields"
       }
     ]
