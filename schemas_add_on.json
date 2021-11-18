@@ -31,6 +31,9 @@
               "ORGANIZATIONID": {
                 "entity": "Organization"
               }
+            },
+            "StandardUserDefinedFields": {
+              "Namespace": "http://schemas.datastream.net/MP_fields"
             }
           }
         }
@@ -58,8 +61,8 @@
       {
         "name": "PUMPCODE",
         "field": "pump_code",
-        "column": "Pump",
-        "required": true,
+        "column": "Pump*\n(non-mandatory for card issue)",
+        "required": false,
         "order": 2,
         "type": "Text",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/PUMPID"
@@ -108,6 +111,15 @@
         "order": 7,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
+      },
+      {
+        "name": "UDFNUM01",
+        "field": "udfnum_01",
+        "column": "Fuel Unit Price*\n(mandatory for card issue)",
+        "required": false,
+        "order": 8,
+        "type": "Amount",
+        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/StandardUserDefinedFields"
       }
     ]
   },
