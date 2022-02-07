@@ -757,7 +757,7 @@
         "field": "bookedhours_code",
         "column": "Book Hours\nCode",
         "required": true,
-        "order": 1,
+        "order": 0,
         "type": "Text",
         "parent": "MP7595_DeleteLaborBooking_001"
       }
