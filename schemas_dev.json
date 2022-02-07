@@ -755,7 +755,7 @@
       {
         "name": "BOOKEDHOURSID",
         "field": "bookedhours_code",
-        "column": "Book Hours\nCode",
+        "column": "Book\nHours\nCode",
         "required": true,
         "order": 0,
         "type": "Text",
