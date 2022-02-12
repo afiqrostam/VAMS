@@ -749,8 +749,8 @@
         "FUNCTION_REQUEST_INFO": {
           "REQUEST_TYPE": "LIST.HEAD_DATA.STORED",
           "GRID": {
-            "GRID_NAME": "9U9981",
-            "USER_FUNCTION_NAME": "9U9981",
+            "GRID_NAME": "WSATCP",
+            "USER_FUNCTION_NAME": "WSATCP",
             "NUMBER_OF_ROWS_FIRST_RETURNED": "9999",
             "CURSOR_POSITION": "1",
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
@@ -758,6 +758,19 @@
           "GRID_TYPE": {
             "TYPE": "LIST",
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
+          },
+          "LOV": {
+            "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest",
+            "LOV_PARAMETERS": {
+              "LOV_PARAMETER": {
+                "ALIAS_NAME": "param.workordercode",
+                "VALUE": "1006353048"
+              },
+              "LOV_PARAMETER": {
+                "ALIAS_NAME": "param.activitycode",
+                "VALUE": "30"
+              }
+            }
           }
         }
       }
