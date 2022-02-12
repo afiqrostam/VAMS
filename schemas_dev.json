@@ -749,8 +749,8 @@
         "FUNCTION_REQUEST_INFO": {
           "REQUEST_TYPE": "LIST.HEAD_DATA.STORED",
           "GRID": {
-            "GRID_NAME": "WSATCP",
-            "USER_FUNCTION_NAME": "WSATCP",
+            "GRID_NAME": "9U9987",
+            "USER_FUNCTION_NAME": "9U9987",
             "NUMBER_OF_ROWS_FIRST_RETURNED": "9999",
             "CURSOR_POSITION": "1",
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
@@ -759,17 +759,19 @@
             "TYPE": "LIST",
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
           },
-          "LOV": {
+          "MULTIADDON_FILTERS": {
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest",
-            "LOV_PARAMETERS": {
-              "LOV_PARAMETER": {
-                "ALIAS_NAME": "param.workordercode",
-                "VALUE": "1006353048"
-              },
-              "LOV_PARAMETER": {
-                "ALIAS_NAME": "param.activitycode",
-                "VALUE": "30"
-              }
+            "MADDON_FILTER": {
+              "ALIAS_NAME": "evt_org",
+              "VALUE": "TAS"
+            },
+            "MADDON_FILTER": {
+              "ALIAS_NAME": "ack_event",
+              "VALUE": "1006353048"
+            },
+            "MADDON_FILTER": {
+              "ALIAS_NAME": "ack_act",
+              "VALUE": "30"
             }
           }
         }
