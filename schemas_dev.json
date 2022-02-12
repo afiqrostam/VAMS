@@ -739,28 +739,28 @@
     ]
   },
   {
-    "name": "MP7595_DeleteLaborBooking_001",
-    "simple": "Delete Labour Booking",
-    "group": "Labour Booking Management",
-    "role": "Labour Booking",
+    "name": "MP0116_GetGridDataOnly_001",
+    "simple": "Get Grid Data",
+    "group": "Grid Data Management",
+    "role": "Grid Data",
     "body": {
-      "MP7595_DeleteLaborBooking_001": {
-        "verb": "Delete",
-        "noun": "LaborBooking",
-        "version": "001",
-        "Namespace": "http://schemas.datastream.net/MP_functions/MP7595_001"
+      "MP0116_GetGridDataOnly_001": {
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP0116_GetGridDataOnly_001",
+        "FUNCTION_REQUEST_INFO": {
+          "REQUEST_TYPE": "LIST.HEAD_DATA.STORED",
+          "GRID": {
+            "GRID_NAME": "9U9981",
+            "USER_FUNCTION_NAME": "9U9981",
+            "NUMBER_OF_ROWS_FIRST_RETURNED": "9999",
+            "CURSOR_POSITION": "1",
+            "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
+          },
+          "GRID_TYPE": {
+            "TYPE": "LIST",
+            "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest"
+          }
+        }
       }
-    },
-    "variable": [
-      {
-        "name": "BOOKEDHOURSID",
-        "field": "bookedhours_code",
-        "column": "Book\nHours\nCode",
-        "required": true,
-        "order": 0,
-        "type": "Text",
-        "parent": "MP7595_DeleteLaborBooking_001"
-      }
-    ]
+    }
   }
 ]
