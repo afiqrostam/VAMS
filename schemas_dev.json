@@ -761,33 +761,35 @@
           },
           "MULTIADDON_FILTERS": {
             "Namespace": "http://schemas.datastream.net/MP_entities/GridRequest",
-            "MADDON_FILTER": {
-              "ALIAS_NAME": "evt_org",
-              "OPERATOR": "=",
-              "VALUE": "TAS",
-              "RPAREN": "false",
-              "LPAREN": "false",
-              "JOINER": "AND",
-              "SEQNUM": "1"
-            },
-            "MADDON_FILTER": {
-              "ALIAS_NAME": "ack_event",
-              "OPERATOR": "=",
-              "VALUE": "1006353048",
-              "RPAREN": "false",
-              "LPAREN": "false",
-              "JOINER": "AND",
-              "SEQNUM": "2"
-            },
-            "MADDON_FILTER": {
-              "ALIAS_NAME": "ack_act",
-              "OPERATOR": "=",
-              "VALUE": "30",
-              "RPAREN": "false",
-              "LPAREN": "false",
-              "JOINER": "AND",
-              "SEQNUM": "3"
-            }
+            "MADDON_FILTER": [
+              {
+                "ALIAS_NAME": "evt_org",
+                "OPERATOR": "=",
+                "VALUE": "TAS",
+                "RPAREN": "false",
+                "LPAREN": "false",
+                "JOINER": "AND",
+                "SEQNUM": "1"
+              },
+              {
+                "ALIAS_NAME": "ack_event",
+                "OPERATOR": "=",
+                "VALUE": "1006353048",
+                "RPAREN": "false",
+                "LPAREN": "false",
+                "JOINER": "AND",
+                "SEQNUM": "2"
+              },
+              {
+                "ALIAS_NAME": "ack_act",
+                "OPERATOR": "=",
+                "VALUE": "30",
+                "RPAREN": "false",
+                "LPAREN": "false",
+                "JOINER": "AND",
+                "SEQNUM": "3"
+              }
+            ]
           }
         }
       }
