@@ -747,7 +747,7 @@
       "MP0116_GetGridDataOnly_001": {
         "Namespace": "http://schemas.datastream.net/MP_functions/MP0116_GetGridDataOnly_001",
         "FUNCTION_REQUEST_INFO": {
-          "REQUEST_TYPE": "LIST.DATA_ONLY.STORED",
+          "REQUEST_TYPE": "LIST.HEAD_ONLY.STORED",
           "GRID": {
             "GRID_NAME": "9U9987",
             "USER_FUNCTION_NAME": "9U9987",
