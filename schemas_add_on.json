@@ -199,6 +199,81 @@
     ]
   },
   {
+    "name": "MP0044_AddMeterDifference_001",
+    "simple": "Add Meter Difference",
+    "group": "Meter Reading Management",
+    "role": "Meter Reading",
+    "body": {
+      "MP0044_AddMeterReading_001": {
+        "verb": "Add",
+        "noun": "MeterReading",
+        "version": "001",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP0044_001",
+        "MeterReading": {
+          "recordid":"0",
+          "Namespace": "http://schemas.datastream.net/MP_entities/MeterReading_001",
+          "is_batchfuelissue": "is_batchfuelissue1",
+          "TARGETEQUIPMENTID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "ORGANIZATIONID": {
+              "entity": "User"
+            }
+          },
+          "USAGEUOMID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields"
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "EQUIPMENTCODE",
+        "field": "element_code",
+        "column": "Element",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP0044_AddMeterReading_001/MeterReading/TARGETEQUIPMENTID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "element_org",
+        "column": "Element\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP0044_AddMeterReading_001/MeterReading/TARGETEQUIPMENTID/ORGANIZATIONID"
+      },
+      {
+        "name": "UOMCODE",
+        "field": "uom_code",
+        "column": "UOM",
+        "required": true,
+        "order": 4,
+        "type": "Text",
+        "parent": "MP0044_AddMeterReading_001/MeterReading/USAGEUOMID"
+      },
+      {
+        "name": "READINGDATE",
+        "field": "date",
+        "column": "Reading\nDate\n(yyyy-mm-dd)",
+        "required": true,
+        "order": 2,
+        "type": "datetime",
+        "parent": "MP0044_AddMeterReading_001/MeterReading"
+      },
+      {
+        "name": "DIFFERENCEREADING",
+        "field": "meter_difference",
+        "column": "Meter\nDifference",
+        "required": true,
+        "order": 3,
+        "type": "reading",
+        "parent": "MP0044_AddMeterReading_001/MeterReading"
+      }
+    ]
+  },
+  {
     "name": "MP4029_AddPurchasingContract_001",
     "simple": "Add Purchasing Contract",
     "group": "Purchasing Contract Management",
