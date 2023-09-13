@@ -63,7 +63,7 @@
         "field": "fuel_code",
         "column": "Fuel",
         "required": true,
-        "order": 3,
+        "order": 2,
         "type": "Text",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/FUELID"
       },
@@ -72,7 +72,7 @@
         "field": "vehicle_code",
         "column": "Vehicle",
         "required": true,
-        "order": 5,
+        "order": 4,
         "type": "Text",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/VEHICLEID"
       },
@@ -81,7 +81,7 @@
         "field": "vehicle_org",
         "column": "Vehicle\nOrganization",
         "required": false,
-        "order": 4,
+        "order": 3,
         "type": "Text",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/VEHICLEID/ORGANIZATIONID"
       },
@@ -90,7 +90,7 @@
         "field": "date",
         "column": "Transaction\nDate\n(yyyy-mm-dd)",
         "required": true,
-        "order": 6,
+        "order": 5,
         "type": "datetime",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
       },
@@ -99,7 +99,7 @@
         "field": "qty_issued",
         "column": "Qty Issued",
         "required": true,
-        "order": 7,
+        "order": 6,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
       },
@@ -108,7 +108,7 @@
         "field": "udfnum_01",
         "column": "Fuel Unit Price",
         "required": true,
-        "order": 8,
+        "order": 7,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/StandardUserDefinedFields"
       }
