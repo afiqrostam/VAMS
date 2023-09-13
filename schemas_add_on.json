@@ -1,7 +1,7 @@
 [
   {
     "name": "MP7655_AddFuelIssue_001",
-    "simple": "Add Fuel Issue",
+    "simple": "Add Fuel",
     "group": "Fuel Management",
     "role": "Fuel Transaction",
     "body": {
@@ -61,7 +61,7 @@
       {
         "name": "PUMPCODE",
         "field": "pump_code",
-        "column": "Pump",
+        "column": "Pump*\n(non-mandatory for card)",
         "required": false,
         "order": 2,
         "type": "Text",
@@ -111,118 +111,12 @@
         "order": 7,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
-      }
-    ]
-  },
-  {
-    "name": "MP7655_AddFuelIssue_001",
-    "simple": "Add Fuel Card Issue",
-    "group": "Fuel Management",
-    "role": "Fuel Transaction",
-    "body": {
-      "MP7655_AddFuelIssue_001": {
-        "verb": "Add",
-        "noun": "FuelIssue",
-        "version": "001",
-        "Namespace": "http://schemas.datastream.net/MP_functions/MP7655_001",
-        "FuelIssue": {
-          "recordid":"0",
-          "Namespace": "http://schemas.datastream.net/MP_entities/FuelIssue_001",
-          "is_batchfuelissue": "is_batchfuelissue1",
-          "FuelOneIssue": {
-            "PUMPID": {
-              "Namespace": "http://schemas.datastream.net/MP_fields",
-              "DEPOTID": {
-                "ORGANIZATIONID": {
-                  "entity": "User"
-                }
-              }
-            },
-            "FUELID": {
-              "Namespace": "http://schemas.datastream.net/MP_fields"
-            },
-            "VEHICLEID": {
-              "Namespace": "http://schemas.datastream.net/MP_fields",
-              "ORGANIZATIONID": {
-                "entity": "Organization"
-              }
-            },
-            "StandardUserDefinedFields": {
-              "Namespace": "http://schemas.datastream.net/MP_fields"
-            }
-          }
-        }
-      }
-    },
-    "variable": [
-      {
-        "name": "DEPOTCODE",
-        "field": "depot_code",
-        "column": "Depot",
-        "required": true,
-        "order": 1,
-        "type": "Text",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/PUMPID/DEPOTID"
-      },
-      {
-        "name": "ORGANIZATIONCODE",
-        "field": "depot_org",
-        "column": "Depot\nOrganization",
-        "required": true,
-        "order": 0,
-        "type": "Text",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/PUMPID/DEPOTID/ORGANIZATIONID"
-      },
-      {
-        "name": "FUELCODE",
-        "field": "fuel_code",
-        "column": "Fuel",
-        "required": true,
-        "order": 3,
-        "type": "Text",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/FUELID"
-      },
-      {
-        "name": "EQUIPMENTCODE",
-        "field": "vehicle_code",
-        "column": "Vehicle",
-        "required": true,
-        "order": 5,
-        "type": "Text",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/VEHICLEID"
-      },
-      {
-        "name": "ORGANIZATIONCODE",
-        "field": "vehicle_org",
-        "column": "Vehicle\nOrganization",
-        "required": false,
-        "order": 4,
-        "type": "Text",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/VEHICLEID/ORGANIZATIONID"
-      },
-      {
-        "name": "TRANSACTIONDATE",
-        "field": "date",
-        "column": "Transaction\nDate\n(yyyy-mm-dd)",
-        "required": true,
-        "order": 6,
-        "type": "datetime",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
-      },
-      {
-        "name": "QUANTITYISSUED",
-        "field": "qty_issued",
-        "column": "Qty Issued",
-        "required": true,
-        "order": 7,
-        "type": "reading",
-        "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue"
       },
       {
         "name": "UDFNUM01",
         "field": "udfnum_01",
-        "column": "Fuel Unit Price",
-        "required": true,
+        "column": "Fuel Unit Price*\n(mandatory for card)",
+        "required": false,
         "order": 8,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/StandardUserDefinedFields"
