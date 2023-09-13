@@ -115,7 +115,7 @@
     ]
   },
   {
-    "name": "MP7655_AddFuelCardIssue_001",
+    "name": "MP7655_AddFuelIssue_001",
     "simple": "Add Fuel Card Issue",
     "group": "Fuel Management",
     "role": "Fuel Transaction",
@@ -222,7 +222,7 @@
         "name": "UDFNUM01",
         "field": "udfnum_01",
         "column": "Fuel Unit Price",
-        "required": false,
+        "required": true,
         "order": 8,
         "type": "reading",
         "parent": "MP7655_AddFuelIssue_001/FuelIssue/FuelOneIssue/StandardUserDefinedFields"
