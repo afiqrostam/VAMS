@@ -1,5 +1,112 @@
 [
   {
+    "name": "MP7668_AddFuelReceipt_001",
+    "simple": "Add Fuel Receipt",
+    "group": "Fuel Management",
+    "role": "Fuel Transaction",
+    "body": {
+      "MP7668_AddFuelReceipt_001": {
+        "verb": "Add",
+        "noun": "FuelReceipt",
+        "version": "001",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP7668_001",
+        "FuelReceipt": {
+          "Namespace": "http://schemas.datastream.net/MP_entities/FuelReceipt_001",
+          "FuelOneReceipt": {
+            "TANKID": {
+              "Namespace": "http://schemas.datastream.net/MP_fields",
+              "DEPOTID": {
+                "ORGANIZATIONID": {
+                  "entity": "User"
+                }
+              }
+            },
+            "SUPPLIERID": {
+              "Namespace": "http://schemas.datastream.net/MP_fields",
+              "ORGANIZATIONID": {
+                "entity": "Organization"
+              }
+            }
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "depot_org",
+        "column": "Depot\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt/TANKID/DEPOTID/ORGANIZATIONID"
+      },
+      {
+        "name": "DEPOTCODE",
+        "field": "depot_code",
+        "column": "Depot",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt/TANKID/DEPOTID"
+      },
+      {
+        "name": "TANKCODE",
+        "field": "tank_code",
+        "column": "Tank",
+        "required": true,
+        "order": 2,
+        "type": "Text",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt/TANKID"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "supplier_org",
+        "column": "Supplier\nOrganization",
+        "required": true,
+        "order": 3,
+        "type": "Text",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt/SUPPLIERID/ORGANIZATIONID"
+      },
+      {
+        "name": "SUPPLIERCODE",
+        "field": "supplier_code",
+        "column": "Supplier",
+        "required": true,
+        "order": 4,
+        "type": "Text",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt/SUPPLIERID"
+      },
+      {
+        "name": "TRANSACTIONDATE",
+        "field": "transaction_date",
+        "column": "Transaction\nDate\n(yyyy-mm-dd)",
+        "required": true,
+        "order": 5,
+        "type": "datetime",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt"
+      },
+      {
+        "name": "RECEIVEDQUANTITY",
+        "field": "qty_received",
+        "column": "Qty\nReceived",
+        "required": true,
+        "order": 6,
+        "type": "reading",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt"
+      },
+      {
+        "name": "PRICE",
+        "field": "price",
+        "column": "Price",
+        "required": true,
+        "order": 7,
+        "type": "Amount",
+        "parent": "MP7668_AddFuelReceipt_001/FuelReceipt/FuelOneReceipt"
+      }
+    ]
+  },
+  {
     "name": "MP7655_AddFuelCardIssue_001",
     "simple": "Add Fuel Card Issue",
     "group": "Fuel Management",
@@ -11,7 +118,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP7655_001",
         "FuelIssue": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/FuelIssue_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "FuelOneIssue": {
@@ -126,7 +233,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP7655_001",
         "FuelIssue": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/FuelIssue_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "FuelOneIssue": {
@@ -241,7 +348,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP0044_001",
         "MeterReading": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/MeterReading_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "TARGETEQUIPMENTID": {
@@ -316,7 +423,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP0044_001",
         "MeterReading": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/MeterReading_001",
           "is_batchfuelissue": "is_batchfuelissue1",
           "TARGETEQUIPMENTID": {
@@ -391,7 +498,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4029_001",
         "PurchasingContract": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContract_001",
           "PURCHASINGCONTRACTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
@@ -584,7 +691,7 @@
         "version": "001",
         "Namespace": "http://schemas.datastream.net/MP_functions/MP4033_001",
         "PurchasingContractPart": {
-          "recordid":"0",
+          "recordid": "0",
           "Namespace": "http://schemas.datastream.net/MP_entities/PurchasingContractPart_001",
           "PURCHASINGCONTRACTPARTID": {
             "Namespace": "http://schemas.datastream.net/MP_fields",
