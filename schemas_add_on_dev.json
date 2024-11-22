@@ -888,7 +888,7 @@
         "column": "Class\nOrganization",
         "required": false,
         "order": 4,
-        "type": "Text",
+        "type": "NoNullText",
         "parent": "MP6001_AddDocument_001/Document/CLASSID/ORGANIZATIONID"
       },
       {
@@ -897,7 +897,7 @@
         "column": "Class\nCode",
         "required": false,
         "order": 5,
-        "type": "Text",
+        "type": "NoNullText",
         "parent": "MP6001_AddDocument_001/Document/CLASSID"
       },
       {
