@@ -848,8 +848,8 @@
     "variable": [
       {
         "name": "autoid",
-        "field": "auto_document_org",
-        "column": "Document\nOrganization",
+        "field": "auto_document_code",
+        "column": "Auto\nDocument\nCode\n(TRUE/FALSE)",
         "required": true,
         "order": 2,
         "type": "JSON",
