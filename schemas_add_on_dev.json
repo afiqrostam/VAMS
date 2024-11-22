@@ -338,7 +338,7 @@
   },
   {
     "name": "MP0044_AddMeterReading_001",
-    "simple": "Add Meter",
+    "simple": "Add Meter Reading",
     "group": "Meter Reading Management",
     "role": "Meter Reading",
     "body": {
@@ -799,6 +799,124 @@
         "order": 8,
         "type": "Text",
         "parent": "MP4033_AddPurchasingContractPart_001/PurchasingContractPart"
+      }
+    ]
+  },
+  {
+    "name": "MP6001_AddDocument_001",
+    "simple": "Add Document",
+    "group": "Document Management",
+    "role": "Document",
+    "body": {
+      "MP6001_AddDocument_001": {
+        "verb": "Add",
+        "noun": "Document",
+        "version": "001",
+        "autoid": "true",
+        "Namespace": "http://schemas.datastream.net/MP_functions/MP6001_AddDocument_001",
+        "Document": {
+          "recordid": "0",
+          "user_entity": "user_entity1",
+          "system_entity": "system_entity1",
+          "is_documentauth_update": "is_d1",
+          "Namespace": "http://schemas.datastream.net/MP_entities/Document_001",
+          "DOCUMENTID": {
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "ORGANIZATIONID": {
+              "entity": "User"
+            }
+          },
+          "CLASSID": {
+            "entity": "ent1",
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "ORGANIZATIONID": {
+              "entity": "Organization"
+            }
+          },
+          "DOCUMENTTYPE": {
+            "entity": "User",
+            "Namespace": "http://schemas.datastream.net/MP_fields",
+            "TYPECODE": {
+              "Text": "U"
+            }
+          },
+          "DocumentAttachment": {
+          }
+        }
+      }
+    },
+    "variable": [
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "document_org",
+        "column": "Document\nOrganization",
+        "required": true,
+        "order": 0,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document/DOCUMENTID/ORGANIZATIONID"
+      },
+      {
+        "name": "DOCUMENTCODE",
+        "field": "document_code",
+        "column": "Document\nCode",
+        "required": true,
+        "order": 1,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document/DOCUMENTID"
+      },
+      {
+        "name": "DESCRIPTION",
+        "field": "document_description",
+        "column": "Document\nDescription",
+        "required": true,
+        "order": 2,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document/DOCUMENTID"
+      },
+      {
+        "name": "DOCUMENTTITLE",
+        "field": "document_title",
+        "column": "Document\nTitle",
+        "required": false,
+        "order": 3,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document"
+      },
+      {
+        "name": "ORGANIZATIONCODE",
+        "field": "class_org",
+        "column": "Class\nOrganization",
+        "required": false,
+        "order": 4,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document/CLASSID/ORGANIZATIONID"
+      },
+      {
+        "name": "CLASSCODE",
+        "field": "class_code",
+        "column": "Class\nCode",
+        "required": false,
+        "order": 5,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document/CLASSID"
+      },
+      {
+        "name": "FILE",
+        "field": "file_name",
+        "column": "File\nName",
+        "required": true,
+        "order": 6,
+        "type": "Text",
+        "parent": "MP6001_AddDocument_001/Document"
+      },
+      {
+        "name": "FILECONTENT",
+        "field": "file_content",
+        "column": "Google\nFile\nID",
+        "required": true,
+        "order": 7,
+        "type": "File",
+        "parent": "MP6001_AddDocument_001/Document/DocumentAttachment"
       }
     ]
   }
